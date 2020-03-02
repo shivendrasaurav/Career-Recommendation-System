@@ -6,8 +6,10 @@ app = Flask(__name__)
 name = "Shivendra Saurav"
 
 @app.route("/")
+@app.route("/home")
+@app.route("/index")
 def home():
-    return render_template('new.html', title="HOME", name=name)
+    return render_template('index.html', title="HOME", name=name)
 
 @app.route("/forms")
 def form():
