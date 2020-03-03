@@ -6,10 +6,10 @@
     <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" type="text/css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
+    <script src="scorecalc.js"></script>
 </head>
-<body class="primary_white">
+<body class="primary_white" onload="showstep1();">
 
-    <div id="body">
 
         <h5 class="page_container">Career Recommendation System</h5>
         <br><br>
@@ -21,23 +21,23 @@
             </div>
             <br><br>
             <form>
-                <label>Enter Your Name</label><br>
+                <p>Enter Your Name</p>
                 <input type="text" placeholder="Name" style="width: 80%; padding: 4px 8px">
 
                 <br><br>
 
-                <label>Enter Your Email Address</label><br>
+                <p>Enter Your Email Address</p>
                 <input type="email" placeholder="Email Address" style="width: 80%; padding: 4px 8px">
 
                 <br><br>
 
-                <label>Paste Your Linkedin Profile URL Here</label><br>
-                <input type="url" placeholder="Name" style="width: 80%; padding: 4px 8px">
+                <p>Paste Your Linkedin Profile URL Here</p>
+                <input type="url" placeholder="LinkedIn URL" style="width: 80%; padding: 4px 8px">
 
                 <br><br>
             </form>
 
-            <button class="secondary_green small">
+            <button class="secondary_green small" onclick="showstep2();">
                     Proceed To Next Step
             </button>
             
@@ -52,12 +52,12 @@
             </div>
             <br><br>
             <form>
-                <label>Enter Your Age</label><br>
+                <p>Enter Your Age</p>
                 <input type="number" placeholder="Age in Number" style="width: 80%; padding: 4px 8px">
 
                 <br><br>
 
-                <label>What is the form of education you are currently pursuing</label>
+                <p>What is the form of education you are currently pursuing</p>
                 <select>
                     <option name="blank">None</option>
                     <option name="blank">Schooling</option>
@@ -69,13 +69,13 @@
                 
                 <br><br>
 
-                <label>In how many years will your cureent education end</label>
+                <p>In how many years will your cureent education end</p>
                 <input type="number" placeholder="Number of Years" style="width: 80%; padding: 4px 8px">
 
                 <br><br>
             </form>
 
-            <button class="secondary_green small">
+            <button class="secondary_green small" onclick="showstep3();">
                     Proceed To Next Step
             </button>
             
@@ -83,28 +83,66 @@
 
         <br><br>
 
-        <div class="page_container" id="step2">
+        <div class="page_container" id="step3">
             <div class="primary_blue" style="padding: 5px 10px">
                 <span>Step 3: Some Important Information</span>
                 <span><i class="ms-Icon ms-Icon--ChevronDownMed right" aria-hidden="true"></i></span>
             </div>
             <br><br>
             <form>
-                <label>Which soft skills do you have</label>
+                <p>Which soft skills do you have</p>
+                <div class="page_container">
 
+                    Communication<input type="checkbox" name="sskills"><br>
+                    Teamwork<input type="checkbox" name="sskills"><br>
+                    Dependability<input type="checkbox" name="sskills"><br>
+                    Adaptibility<input type="checkbox" name="sskills"><br>
+                    Conflict Resolution<input type="checkbox" name="sskills"><br>
+                    Flexiblity<input type="checkbox" name="sskills"><br>
+                    Leadership<input type="checkbox" name="sskills"><br>
+                    Problem-Solving<input type="checkbox" name="sskills"><br>
+                    Research<input type="checkbox" name="sskills"><br>
+                    Creativity<input type="checkbox" name="sskills"><br>
+                    Work Ethics<input type="checkbox" name="sskills"><br>
+                    Integrity<input type="checkbox" name="sskills">
+
+                </div>
                 <br><br>
 
-                <label>Which field do you prefer to work in</label>
-                
+                <p>Which field do you prefer to work in</p>
+                <div class="page_container">
+
+                    Computer Technology<input type="checkbox" name="sskills"><br>
+                    Hard Communication Skills<input type="checkbox" name="sskills"><br>
+                    Data Analysis<input type="checkbox" name="sskills"><br>
+                    Certifications and Licenses<input type="checkbox" name="sskills"><br>
+                    Marketing<input type="checkbox" name="sskills"><br>
+                    Project Management<input type="checkbox" name="sskills"><br>
+                    Design<input type="checkbox" name="sskills"><br>
+                    Cloud Computing<input type="checkbox" name="sskills"><br>
+                    Mobile and Web Development<input type="checkbox" name="sskills"><br>
+                    Network Structure and Security<input type="checkbox" name="sskills">
+
+                </div>
                 <br><br>
             </form>
 
-            <button class="secondary_green small">
-                    Proceed To Next Step
+            <button class="secondary_green small" onclick="showfinal(); calcresult(); ">
+                    Get Results
             </button>
             
         </div>
 
-    </div>
+        <br><br>
 
+        <div class="page_container" id="results">
+
+            <div>Based on the skills you posses,
+            <h3>Field Name</h3>
+            should be a good career choice for you</div>
+
+        </div>
+
+    
 </body>
+</html>

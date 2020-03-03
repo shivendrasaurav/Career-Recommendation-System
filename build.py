@@ -3,7 +3,7 @@ from forms import Register
 
 app = Flask(__name__)
 
-name = "Shivendra Saurav"
+name = "Customer Recommendation System"
 
 @app.route("/")
 @app.route("/home")
