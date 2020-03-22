@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
     <script src="scorecalc.js"></script>
+    <script src="script.js"></script>
 </head>
 <body class="primary_white" onload="showstep1();">
 
@@ -109,13 +110,11 @@
                 </div>
                 <br><br>
 
-                <p>Which field do you prefer to work in</p>
+                <p>Which field do you prefer to work in(Max 3 Fields)</p>
                 <div class="page_container">
 
                     Computer Technology<input type="checkbox" name="sskills"><br>
-                    Hard Communication Skills<input type="checkbox" name="sskills"><br>
                     Data Analysis<input type="checkbox" name="sskills"><br>
-                    Certifications and Licenses<input type="checkbox" name="sskills"><br>
                     Marketing<input type="checkbox" name="sskills"><br>
                     Project Management<input type="checkbox" name="sskills"><br>
                     Design<input type="checkbox" name="sskills"><br>
@@ -125,9 +124,28 @@
 
                 </div>
                 <br><br>
+
+                <p>Do you posses any of these skills</p>
+                <div class="page_container">
+
+                    HTML<input type="checkbox" name="sskills" id="1"><br>
+                    CSS<input type="checkbox" name="sskills" id="2"><br>
+                    Javascript<input type="checkbox" name="sskills" id="3"><br>
+                    PHP<input type="checkbox" name="sskills" id="4"><br>
+                    Python<input type="checkbox" name="sskills" id="5"><br>
+                    Java<input type="checkbox" name="sskills" id="6"><br>
+                    C<input type="checkbox" name="sskills" id="7"><br>
+                    C++<input type="checkbox" name="sskills" id="8"><br>
+                    SQL<input type="checkbox" name="sskills" id="9"><br>
+                    Postgre<input type="checkbox" name="sskills" id="10"><br>
+                    R<input type="checkbox" name="sskills" id="11"><br>
+                    Ruby<input type="checkbox" name="sskills" id="12">
+
+                </div>
+                <br><br>
             </form>
 
-            <button class="secondary_green small" onclick="showfinal(); calcresult(); ">
+            <button class="secondary_green small" onclick="showfinal(); calccar(); ">
                     Get Results
             </button>
             
@@ -138,7 +156,7 @@
         <div class="page_container" id="results">
 
             <div>Based on the skills you posses,
-            <h3>Field Name</h3>
+            <h3 id="res">Field Name</h3>
             should be a good career choice for you</div>
 
         </div>
