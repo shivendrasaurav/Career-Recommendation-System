@@ -1,0 +1,19 @@
+References:
+
+1. Francesco Ricci and Lior Rokach and Bracha Shapira, Introduction to Recommender Systems Handbook, Recommender Systems Handbook, Springer, 2011, pp. 1-35
+
+2. Goldberg, D., Nichols, D., Oki, B.M., Terry, D.: Using collaborative filtering to weave an information tapestry. Commun. ACM 35(12), 61–70 (1992)
+
+3. Pankaj Gupta, Ashish Goel, Jimmy Lin, Aneesh Sharma, Dong Wang, and Reza Bosagh Zadeh WTF:The who-to-follow system at Twitter, Proceedings of the 22nd international conference on World Wide Web
+
+4. John S. Breese; David Heckerman & Carl Kadie (1998). Empirical analysis of predictive algorithms for collaborative filtering. In Proceedings of the Fourteenth conference on Uncertainty in artificial intelligence (UAI'98). arXiv:1301.7363.
+
+5. D.H. Wang, Y.C. Liang, D.Xu, X.Y. Feng, R.C. Guan(2018), "A content-based recommender system for computer science publications", Knowledge-Based Systems, 157: 1-9
+
+6.  Lakiotaki, K.; Matsatsinis; Tsoukias, A (March 2011). "Multicriteria User Modeling in Recommender Systems". IEEE Intelligent Systems. 26 (2): 64–76. CiteSeerX 10.1.1.476.6726. doi:10.1109/mis.2011.33.
+
+7. Bouneffouf, Djallel (2013), DRARS, A Dynamic Risk-Aware Recommender System (Ph.D.), Institut National des Télécommunications
+
+8. Flask Installation - https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask
+
+9. Flask Quickstart (Get started with a Simple Flask Project) - https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application
